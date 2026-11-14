@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "source": "https://github.com/Lolendor/reVCDOS",
+  "revision": "95f14ef3c1d0a872ecd0881544cc7e1f55cb1946",
+  "scope": "Public credited upstream wrapper source, not a byte-identical backup of the live site",
+  "license": "MIT, copyright 2025 Alexey Olendor; see copied LICENSE",
+  "fileCount": 35,
+  "totalBytes": 1440451,
+  "files": [
+    {
+      "path": ".htaccess",
+      "bytes": 927,
+      "sha256": "a837615b4dbb37437a3e1632c66f05afe8592eb9114b2a61cf25494292714162"
+    },
+    {
+      "path": "additions/auth.py",
+      "bytes": 1472,
+      "sha256": "c8d15ca04613ce558c46ae6ed2ff41a35e2f0757d3dff12c147f7811cbdbb467"
+    },
+    {
+      "path": "additions/cache.py",
+      "bytes": 6441,
+      "sha256": "90d7cf56e5a392a6adc531127048145c9196b06c72b28daf1bd6b1a2b72f44da"
+    },
+    {
+      "path": "additions/packed.py",
+      "bytes": 13797,
+      "sha256": "316c21ff552279ee92ef454692e52a9e75980964f0562989bcb6da651bae2c6c"
+    },
+    {
+      "path": "additions/saves.py",
+      "bytes": 1398,
+      "sha256": "65ce1e7b60e5dbea05af183278d36708af48232263189e232965af7c5a8a68e1"
+    },
+    {
+      "path": "dist/game.js",
+      "bytes": 32745,
+      "sha256": "c91810db9d6da56cd4d515cdc7e77bfa0418bd598d4768afae580be094677a82"
+    },
+    {
+      "path": "dist/GamepadEmulator.js",
+      "bytes": 35089,
+      "sha256": "1cedf5cf0edc20057e7f76e1f1957fcecd9f49cd64c1dfeb973054e7a3188376"
+    },
+    {
+      "path": "dist/idbfs.js",
+      "bytes": 7962,
+      "sha256": "31e900d5c3b83f5895fa0e087950ef4dd7ee2a5b75a22d90892263ce0d9a68fb"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 94127,
+      "sha256": "fa2b9b419d4444ec0422d2e1be06e14fee9eb6d53b387fdae11edf0afdc5bf0a"
+    },
+    {
+      "path": "dist/index.js",
+      "bytes": 1136,
+      "sha256": "4045eca7b85357d09608bfb6404c69d88277ab447c7ad64801cd291a34fccd19"
+    },
+    {
+      "path": "dist/jsdos-cloud-sdk-local.js",
+      "bytes": 21920,
+      "sha256": "4d2a74f506218a937bf855c6ba37646b05b17492408a1f017e00abe1aa21f5f6"
+    },
+    {
+      "path": "dist/jsdos-cloud-sdk.js",
+      "bytes": 22490,
+      "sha256": "c38e48c0f8aa6414db5d18eaafd1fdc7483ebf9961a956f6391c38850004e953"
+    },
+    {
+      "path": "dist/modules/asm_consts/en.js",
+      "bytes": 14313,
+      "sha256": "d74be22f35739d07ff9c5f2e5cc011afb90ffde7328593c6ff41b38bcad465bf"
+    },
+    {
+      "path": "dist/modules/asm_consts/ru.js",
+      "bytes": 15943,
+      "sha256": "5fd5d83e1b2c7b84870f0fe7c013f9952828aa5e021a0e455816077fbb51efa5"
+    },
+    {
+      "path": "dist/modules/audio.js",
+      "bytes": 90186,
+      "sha256": "d3a1dcda494888d248bf201c494ee98f3a96e020bea6df863a39e86948b13a18"
+    },
+    {
+      "path": "dist/modules/cheats.js",
+      "bytes": 69417,
+      "sha256": "f8886b0ad74866b8e499f4c9d1f7d423a4ea1f5b34aadc02dbd85f93a17d565e"
+    },
+    {
+      "path": "dist/modules/events.js",
+      "bytes": 54881,
+      "sha256": "ee27d72e4420240c9e718a763ff8be7b2a3026c45cb3db416fda835611a3a6b4"
+    },
+    {
+      "path": "dist/modules/fetch.js",
+      "bytes": 13488,
+      "sha256": "d69a13b551356fd617e96cd9482d2a60df87d3bb676313d6e114125f91682bc5"
+    },
+    {
+      "path": "dist/modules/fs.js",
+      "bytes": 99817,
+      "sha256": "2abc098dd4463495ad9d31321a8e4425415798943dad3331a609a1a0e7cb8ee1"
+    },
+    {
+      "path": "dist/modules/graphics.js",
+      "bytes": 105045,
+      "sha256": "6fe5512c1c0ce0da59d4006cbc46acaae32bc2f9891a0aed072d2041709fadcf"
+    },
+    {
+      "path": "dist/modules/loader.js",
+      "bytes": 9469,
+      "sha256": "f61c1f15cfb7c1155948718a6bb9737002b770955435c61725a6ad3ff4b1073d"
+    },
+    {
+      "path": "dist/modules/main.js",
+      "bytes": 37,
+      "sha256": "44a846ce7b899d7de6c1004496bef38731c5ba5e708dce0b36cf7695b8fa9ce1"
+    },
+    {
+      "path": "dist/modules/packages/en.js",
+      "bytes": 243191,
+      "sha256": "cdc311e3a7d72ebc151410bfb2a44d39891d7e55f86cc03b0f8538ac7334ec8e"
+    },
+    {
+      "path": "dist/modules/packages/ru.js",
+      "bytes": 244121,
+      "sha256": "ce7cd2c1c98abeeaab711f5ae8a848aa0786f1e16d4ed4bd9ffafd543d55c6ae"
+    },
+    {
+      "path": "dist/modules/runtime.js",
+      "bytes": 95224,
+      "sha256": "bdd52102f5238a1a7a235738404a3fb5f2cf71154c8ad3337a8a9826eaa71351"
+    },
+    {
+      "path": "dist/modules/syscalls.js",
+      "bytes": 16459,
+      "sha256": "2afbfa6155f81aea33731867d0c33d8f0d50b01149062ea8bfae43befbcc78fb"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 1809,
+      "sha256": "d19958dac819535e8abb3a506b1e2882ff6c709f1cfd5baa054717147dc47dd1"
+    },
+    {
+      "path": "docker/Dockerfile",
+      "bytes": 152,
+      "sha256": "2157b5ad9a7667ee62e89032f892df7c203e4e8b93af963f29e5a94fadb170d1"
+    },
+    {
+      "path": "index.php",
+      "bytes": 4190,
+      "sha256": "1b34eeb1865facd6e4438be0425f6bbcff6e57ac5f364bdf30dc71fe17bab130"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "ef1c695688f517e50785171918eceb92ec456393a9b64e1d6b206938d294c944"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12661,
+      "sha256": "a0bac0066be91137a34995cb39a424884cadf788602dc94fdcc1d69708f21f88"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 54,
+      "sha256": "4979c57f784d8e87110bf02537cc16ad20a5ca16f41c07c6b792fb5c659afe80"
+    },
+    {
+      "path": "server.py",
+      "bytes": 16506,
+      "sha256": "a614f328403bd7c56bf969d8685ff4077dffc79600db4050ad6c3859cc88f589"
+    },
+    {
+      "path": "utils/downloader_brotli.py",
+      "bytes": 19282,
+      "sha256": "24dc96d254bd48518d644947861f19fefdcc0986d57d14db07a7caa275ea81a7"
+    },
+    {
+      "path": "utils/packer_brotli.py",
+      "bytes": 73631,
+      "sha256": "54580c1b89c18a7d5366bc3aef96103dd1666d7bdbf153624e0292de9c3cd811"
+    }
+  ],
+  "excluded": [
+    ".git",
+    "cover.jpg",
+    "intro.mp4",
+    "game data",
+    "WASM engines",
+    "private server state",
+    "cloud save keys"
+  ],
+  "playability": "NOT VERIFIED / engine and game data absent",
+  "nextRequired": [
+    "Authorized language-specific /vcbr/ WASM payload",
+    "Authorized /vcsky/ resources in runtime-compatible layout",
+    "Any original host configuration and save backups"
+  ],
+  "note": "No files have been installed into the active hub, no upstream scripts executed, no game data fetched, no ownership flags changed."
+}
