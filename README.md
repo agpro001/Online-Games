@@ -132,3 +132,16 @@ The restricted sandbox blocked Playwright's browser CDN. QA used an npm-distribu
 - **External game lacks touch controls:** use its supported controller/overlay. This hub cannot alter cross-origin input.
 - **Storage denied:** preferences may not persist; allow site storage and avoid private-mode assumptions. Export supported lab saves before clearing site storage.
 - **Offline game failure:** expected unless that exact runtime independently supports offline operation. The hub caches only its shell.
+
+## Recovery of lost deployment files
+
+A source-only recovery pass is now available: [recovery status and instructions](recovery/README.md). A verified archive of 35 files from the matching publicly licensed Vice City wrapper is preserved at `recovery/vice-city-wrapper-source.tar.gz`, with per-file provenance/checksums. **This archive does not include the WASM engine or commercial game data and is not a playable game installation.** It is not deployed by Vite.
+
+Read-only backup inventory and source recovery commands:
+
+```sh
+npm run recovery:inventory -- /path/to/your/extracted/backup
+npm run recovery:source -- /path/to/clean/audited/reVCDOS /new/recovery/folder
+```
+
+`npm test` now runs the existing TypeScript suite plus four Node recovery tests. Hosting exports are the next required input for recovering missing runtime binaries and data; do not supply passwords or secret keys in chat.

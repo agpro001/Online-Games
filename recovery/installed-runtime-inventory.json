@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "scope": "Local filenames/sizes only; no execution, upload or extraction",
+  "files": [
+    {
+      "path": "input-lab/index.html",
+      "bytes": 755,
+      "kind": "code-or-config"
+    },
+    {
+      "path": "input-lab/lab.css",
+      "bytes": 419,
+      "kind": "code-or-config"
+    },
+    {
+      "path": "input-lab/lab.js",
+      "bytes": 4298,
+      "kind": "code-or-config"
+    }
+  ],
+  "skippedSymlinks": 0,
+  "counts": {
+    "code-or-config": 3
+  },
+  "firstPlainWasmHeader": null,
+  "playability": "NOT DETERMINED. File presence/header alone does not establish a compatible complete runtime.",
+  "warning": "Output can contain private backup filenames. Review before sharing; do not publish saves, keys, databases or game data."
+}

@@ -7,3 +7,6 @@ test-results/
 public/games/*
 !public/games/input-lab/
 !public/games/input-lab/**
+
+# Disposable extracted copy; verified source archive and manifest are preserved.
+/recovery/vice-city-wrapper/
