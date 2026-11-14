@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env*
+public/games/*
+!public/games/input-lab/
+!public/games/input-lab/**

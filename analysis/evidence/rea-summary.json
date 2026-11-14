@@ -1,0 +1,1121 @@
+{
+  "scope": "Static analysis of upstream checkout, NOT a byte-identical capture of live Lemon deployment",
+  "upstream_commit": "95f14ef3c1d0a872ecd0881544cc7e1f55cb1946",
+  "evidence_id": "ev_76962960f579815669c80eeda5db996f7dc31c814e16cff9c560c0295dabd16b",
+  "provider": {
+    "id": "rea-javascript-application",
+    "name": "REA JavaScript application analyzer",
+    "version": "1"
+  },
+  "root_sha256": "059e3d8e4276885e4190def8a5bbd6cb34cc8c0580cea1622737aee96e11027f",
+  "node_counts": {
+    "javascript-module": 28,
+    "endpoint": 21,
+    "javascript-asset": 20,
+    "artifact": 2,
+    "storage": 9,
+    "unknown": 4,
+    "electron-renderer": 1
+  },
+  "graph_keys": [
+    "schema",
+    "root_node_ids",
+    "nodes",
+    "edges",
+    "coverage",
+    "limitations",
+    "graph_id"
+  ],
+  "nodes": [
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/packages/ru.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "ce7cd2c1c98abeeaab711f5ae8a848aa0786f1e16d4ed4bd9ffafd543d55c6ae",
+            "path": "modules/packages/ru.js",
+            "logical_module_key": "modules/packages/ru.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "storageEndpoint + \"/\" +\n                profile.email + \"/\" + encodeURIComponent(fileName)",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/fs.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "2abc098dd4463495ad9d31321a8e4425415798943dad3331a609a1a0e7cb8ee1",
+            "path": "modules/fs.js",
+            "logical_module_key": "modules/fs.js",
+            "module_format": "commonjs",
+            "import_relationships": 1,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "cheats",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "cheats",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/asm_consts/ru.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "5fd5d83e1b2c7b84870f0fe7c013f9952828aa5e021a0e455816077fbb51efa5",
+            "path": "modules/asm_consts/ru.js",
+            "logical_module_key": "modules/asm_consts/ru.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "link.href",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "link.href",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "fs",
+          "properties": {
+            "reference_kind": "require",
+            "specifier": "fs",
+            "expression": null,
+            "resolution": "unresolved",
+            "resolution_status": "external"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "configurable",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "configurable",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "crypto",
+          "properties": {
+            "semantic_role": "module-reference",
+            "declared_specifier": "crypto",
+            "resolution_status": "external"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "binaryFile",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "binaryFile",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/events.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "ee27d72e4420240c9e718a763ff8be7b2a3026c45cb3db416fda835611a3a6b4",
+            "path": "modules/events.js",
+            "logical_module_key": "modules/events.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "wasm_content ? wasm_content : \"index.wasm\"",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "cheat-fly-pos",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "cheat-fly-pos",
+            "mechanism": "call:localStorage.getItem"
+          }
+        },
+        {
+          "label": "cheat-fly-pos",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "cheat-fly-pos",
+            "mechanism": "call:localStorage.setItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "post.url",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "post.url",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "Content-Length",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "Content-Length",
+            "mechanism": "call:headers.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "cache-storage",
+          "properties": {
+            "storage_kind": "cache-storage",
+            "name": null,
+            "mechanism": "call:caches.open"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "presignPut + \"?path=\" +\n            encodeURIComponent(fileName) + \"&token=\" + token",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "cheat-toggle-pos",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "cheat-toggle-pos",
+            "mechanism": "call:localStorage.setItem"
+          }
+        },
+        {
+          "label": "cheat-toggle-pos",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "cheat-toggle-pos",
+            "mechanism": "call:localStorage.getItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/loader.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "f61c1f15cfb7c1155948718a6bb9737002b770955435c61725a6ad3ff4b1073d",
+            "path": "modules/loader.js",
+            "logical_module_key": "modules/loader.js",
+            "module_format": "commonjs",
+            "import_relationships": 1,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "packageName",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "packageName",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/packages/en.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "cdc311e3a7d72ebc151410bfb2a44d39891d7e55f86cc03b0f8538ac7334ec8e",
+            "path": "modules/packages/en.js",
+            "logical_module_key": "modules/packages/en.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "lang",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "lang",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        },
+        {
+          "label": "lang",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "lang",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "API_PREFIX + \"/token/get?id=\" + token",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "data_content",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "data_content",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/syscalls.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "2afbfa6155f81aea33731867d0c33d8f0d50b01149062ea8bfae43befbcc78fb",
+            "path": "modules/syscalls.js",
+            "logical_module_key": "modules/syscalls.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/cheats.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "f8886b0ad74866b8e499f4c9d1f7d423a4ea1f5b34aadc02dbd85f93a17d565e",
+            "path": "modules/cheats.js",
+            "logical_module_key": "modules/cheats.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "fs",
+          "properties": {
+            "reference_kind": "require",
+            "specifier": "fs",
+            "expression": null,
+            "resolution": "unresolved",
+            "resolution_status": "external"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "API_PREFIX + \"/saves/download/\" + token + \"/\" + encodeURIComponent(fileName)",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "GamepadEmulator.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "1cedf5cf0edc20057e7f76e1f1957fcecd9f49cd64c1dfeb973054e7a3188376",
+            "path": "GamepadEmulator.js",
+            "logical_module_key": "GamepadEmulator.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "vcsky.revc.ini",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.revc.ini",
+            "mechanism": "call:localStorage.setItem"
+          }
+        },
+        {
+          "label": "vcsky.revc.ini",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.revc.ini",
+            "mechanism": "call:localStorage.getItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "request_original_game",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "request_original_game",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.setItem"
+          }
+        },
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.removeItem"
+          }
+        },
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.removeItem"
+          }
+        },
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.getItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "jsdos-cloud-sdk.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "c38e48c0f8aa6414db5d18eaafd1fdc7483ebf9961a956f6391c38850004e953",
+            "path": "jsdos-cloud-sdk.js",
+            "logical_module_key": "jsdos-cloud-sdk.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "idbfs.js:wrapIDBFS",
+          "properties": {
+            "semantic_role": "export-binding",
+            "module_path": "idbfs.js",
+            "relationship_kind": "commonjs-export",
+            "exported_name": "wrapIDBFS",
+            "local_name": null,
+            "imported_name": null,
+            "declared_specifier": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "replaceFetch(\"https://cdn.dos.zone/vcsky/sha256sums.txt\")",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/fetch.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "d69a13b551356fd617e96cd9482d2a60df87d3bb676313d6e114125f91682bc5",
+            "path": "modules/fetch.js",
+            "logical_module_key": "modules/fetch.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "vcsky.haveOriginalGame",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.haveOriginalGame",
+            "mechanism": "call:localStorage.setItem"
+          }
+        },
+        {
+          "label": "vcsky.haveOriginalGame",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.haveOriginalGame",
+            "mechanism": "call:localStorage.setItem"
+          }
+        },
+        {
+          "label": "vcsky.haveOriginalGame",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.haveOriginalGame",
+            "mechanism": "call:localStorage.removeItem"
+          }
+        },
+        {
+          "label": "vcsky.haveOriginalGame",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.haveOriginalGame",
+            "mechanism": "call:localStorage.getItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/runtime.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "bdd52102f5238a1a7a235738404a3fb5f2cf71154c8ad3337a8a9826eaa71351",
+            "path": "modules/runtime.js",
+            "logical_module_key": "modules/runtime.js",
+            "module_format": "commonjs",
+            "import_relationships": 1,
+            "type_relationships": 0,
+            "export_relationships": 1,
+            "export_names": [
+              "default"
+            ],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "game.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "c91810db9d6da56cd4d515cdc7e77bfa0418bd598d4768afae580be094677a82",
+            "path": "game.js",
+            "logical_module_key": "game.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "fullscreen",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "fullscreen",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "crypto",
+          "properties": {
+            "reference_kind": "require",
+            "specifier": "crypto",
+            "expression": null,
+            "resolution": "unresolved",
+            "resolution_status": "external"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "jsdos-cloud-sdk-local.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "4d2a74f506218a937bf855c6ba37646b05b17492408a1f017e00abe1aa21f5f6",
+            "path": "jsdos-cloud-sdk-local.js",
+            "logical_module_key": "jsdos-cloud-sdk-local.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/audio.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "d3a1dcda494888d248bf201c494ee98f3a96e020bea6df863a39e86948b13a18",
+            "path": "modules/audio.js",
+            "logical_module_key": "modules/audio.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/asm_consts/en.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "d74be22f35739d07ff9c5f2e5cc011afb90ffde7328593c6ff41b38bcad465bf",
+            "path": "modules/asm_consts/en.js",
+            "logical_module_key": "modules/asm_consts/en.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "indexed-db",
+          "properties": {
+            "storage_kind": "indexed-db",
+            "name": null,
+            "mechanism": "call:indexedDB.open"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "index.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "4045eca7b85357d09608bfb6404c69d88277ab447c7ad64801cd291a34fccd19",
+            "path": "index.js",
+            "logical_module_key": "index.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "\"https://cloud.js-dos.com/token/get?id=\" + token",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/runtime.js:default",
+          "properties": {
+            "semantic_role": "export-binding",
+            "module_path": "modules/runtime.js",
+            "relationship_kind": "commonjs-export",
+            "exported_name": "default",
+            "local_name": "Module",
+            "imported_name": null,
+            "declared_specifier": null
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "url",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "url",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.getItem"
+          }
+        },
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.removeItem"
+          }
+        },
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.removeItem"
+          }
+        },
+        {
+          "label": "js.cloud.sdk.v8.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "js.cloud.sdk.v8.key",
+            "mechanism": "call:localStorage.setItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/main.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "44a846ce7b899d7de6c1004496bef38731c5ba5e708dce0b36cf7695b8fa9ce1",
+            "path": "modules/main.js",
+            "logical_module_key": "modules/main.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "idbfs.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "31e900d5c3b83f5895fa0e087950ef4dd7ee2a5b75a22d90892263ce0d9a68fb",
+            "path": "idbfs.js",
+            "logical_module_key": "idbfs.js",
+            "module_format": "commonjs",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 1,
+            "export_names": [
+              "wrapIDBFS"
+            ],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "max_fps",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "max_fps",
+            "mechanism": "call:params.get",
+            "interpretation": "candidate"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "observations": [
+        {
+          "label": "vcsky.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.key",
+            "mechanism": "call:localStorage.getItem"
+          }
+        },
+        {
+          "label": "vcsky.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.key",
+            "mechanism": "call:localStorage.setItem"
+          }
+        },
+        {
+          "label": "vcsky.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.key",
+            "mechanism": "call:localStorage.getItem"
+          }
+        },
+        {
+          "label": "vcsky.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.key",
+            "mechanism": "call:localStorage.getItem"
+          }
+        },
+        {
+          "label": "vcsky.key",
+          "properties": {
+            "storage_kind": "local-storage",
+            "name": "vcsky.key",
+            "mechanism": "call:localStorage.getItem"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "fs",
+          "properties": {
+            "semantic_role": "module-reference",
+            "declared_specifier": "fs",
+            "resolution_status": "external"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "modules/graphics.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "source_sha256": "6fe5512c1c0ce0da59d4006cbc46acaae32bc2f9891a0aed072d2041709fadcf",
+            "path": "modules/graphics.js",
+            "logical_module_key": "modules/graphics.js",
+            "module_format": "unknown",
+            "import_relationships": 0,
+            "type_relationships": 0,
+            "export_relationships": 0,
+            "export_names": [],
+            "type_export_names": [],
+            "omitted_export_names": 0
+          }
+        }
+      ]
+    },
+    {
+      "kind": "endpoint",
+      "observations": [
+        {
+          "label": "network endpoint",
+          "properties": {
+            "endpoint_kind": "network",
+            "value": "API_PREFIX + \"/saves/upload\"",
+            "mechanism": "call:fetch",
+            "resolution": "partial"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "observations": [
+        {
+          "label": "fs",
+          "properties": {
+            "semantic_role": "module-reference",
+            "declared_specifier": "fs",
+            "resolution_status": "external"
+          }
+        }
+      ]
+    }
+  ]
+}

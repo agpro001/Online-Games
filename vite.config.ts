@@ -1,0 +1,5 @@
+import {defineConfig,type Plugin} from 'vite';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+function shellWorker():Plugin{return {name:'afterhours-shell-worker',apply:'build',writeBundle(options,bundle){const dir=options.dir??'dist';const assets=['/','/index.html','/manifest.webmanifest','/icons/icon.svg','/icons/icon-192.png','/icons/icon-512.png','/assets/vice-city.jpg',...Object.keys(bundle).filter(k=>k.startsWith('assets/')&&/\.(js|css|woff2)$/.test(k)).map(k=>'/'+k)];const version=createHash('sha256').update(JSON.stringify(assets)).update(fs.readFileSync('public/sw.js')).digest('hex').slice(0,12);let sw=fs.readFileSync('public/sw.js','utf8');sw=sw.replace("const CACHE='afterhours-shell-v1';",`const CACHE='afterhours-shell-${version}';`).replace("self.__SHELL_ASSETS__||",JSON.stringify(assets)+'||');fs.writeFileSync(dir+'/sw.js',sw);fs.mkdirSync(dir+'/analysis',{recursive:true});fs.copyFileSync('analysis/GAME-FEASIBILITY.md',dir+'/analysis/GAME-FEASIBILITY.md');}};}
+export default defineConfig({plugins:[shellWorker()],server:{host:'0.0.0.0',allowedHosts:true},preview:{host:'0.0.0.0',allowedHosts:true},build:{target:'es2022'}});
