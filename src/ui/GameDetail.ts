@@ -47,7 +47,7 @@ export function renderDetail(root: HTMLElement, g: Game, c: Capabilities) {
   );
   const actions = el("div", "page-actions");
   if (g.status === "available")
-    actions.append(link("Play input lab", `#/play/${g.id}`, "primary"));
+    actions.append(link("Play local runtime", `#/play/${g.id}`, "primary"));
   else if (g.status === "external")
     actions.append(link("Launch options", `#/play/${g.id}`, "primary"));
   else {
@@ -78,7 +78,7 @@ export function renderDetail(root: HTMLElement, g: Game, c: Capabilities) {
     [
       "AVAILABILITY",
       g.status === "available"
-        ? "Local input laboratory only"
+        ? "Authorized local runtime"
         : g.status === "external"
           ? "External reference"
           : "Pending authorized files",

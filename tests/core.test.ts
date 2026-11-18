@@ -38,10 +38,10 @@ afterEach(() => {
 });
 describe("registry and URL security", () => {
   it("has unique validated IDs and no unauthorized commercial local builds", () => {
-    expect(validateRegistry(games).length).toBe(51);
+    expect(validateRegistry(games).length).toBe(52);
     expect(
       games.filter((g) => g.status === "available").map((g) => g.id),
-    ).toEqual(["input-lab"]);
+    ).toEqual(["threshold", "input-lab"]);
   });
   it("rejects duplicate IDs", () =>
     expect(() => validateRegistry([games[0], games[0]])).toThrow());
@@ -66,9 +66,11 @@ describe("registry and URL security", () => {
       validateRegistry([{ ...games.at(-1), bridge: false }]),
     ).toThrow());
   it("matches title, tag, alias and fuzzy subsequence", () => {
-    expect(matches(games[0], "vice")).toBe(true);
-    expect(matches(games[0], "vce")).toBe(true);
-    expect(matches(games[0], "horror")).toBe(false);
+    const viceCity = games.find((game) => game.id === "vc")!;
+    expect(matches(viceCity, "vice")).toBe(true);
+    expect(matches(viceCity, "vce")).toBe(true);
+    expect(matches(viceCity, "horror")).toBe(false);
+    expect(matches(games[0], "last signal")).toBe(true);
   });
 });
 describe("routes", () => {
@@ -165,18 +167,22 @@ describe("input state merging", () => {
 });
 describe("compatibility", () => {
   it("does not claim external runtime works", () =>
-    expect(compatibility(games[0], capabilities).status).toBe("UNKNOWN"));
+    expect(compatibility(games.find((game) => game.id === "vc")!, capabilities).status).toBe("UNKNOWN"));
   it("enforces required APIs", () =>
     expect(
       compatibility(
-        { ...games[0], requirements: { wasm: true, webgl2: true } },
+        {
+          ...games.find((game) => game.id === "vc")!,
+          requirements: { wasm: true, webgl2: true },
+        },
         { ...capabilities, wasm: false },
       ).status,
     ).toBe("UNSUPPORTED"));
-  it("declared lab APIs are supported, not performance rated", () =>
-    expect(compatibility(games.at(-1)!, capabilities).status).toBe(
-      "SUPPORTED",
-    ));
+  it("declared local APIs are supported, not performance rated", () =>
+    expect(
+      compatibility(games.find((game) => game.id === "input-lab")!, capabilities)
+        .status,
+    ).toBe("SUPPORTED"));
 });
 describe("session lifecycle", () => {
   it("enforces transitions and cleans to idle", () => {

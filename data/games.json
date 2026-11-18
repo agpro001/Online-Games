@@ -1,5 +1,53 @@
 [
   {
+    "id": "threshold",
+    "title": "THRESHOLD: The Last Signal",
+    "series": "Tools",
+    "year": "2026",
+    "description": "An original, compact Canvas survival-horror adventure: recover signals in the Fold and Hospital, choose Mara or Ward's record, explore an optional town, and restore the island beacon.",
+    "runtime": "Original Canvas 2D story runtime",
+    "launchMode": "iframe",
+    "entry": "/games/threshold/index.html",
+    "reference": null,
+    "status": "available",
+    "rights": "Original project code and procedural Canvas artwork; no third-party game assets",
+    "artwork": null,
+    "tone": "#41452c",
+    "accent": "#e6ce79",
+    "tags": ["horror", "action", "mobile", "available", "original"],
+    "aliases": ["threshold", "last signal", "fold", "hospital"],
+    "mobile": true,
+    "fullscreen": true,
+    "touchControls": true,
+    "performance": "Playable",
+    "performanceTier": "low",
+    "platform": "Modern browser with Canvas 2D; landscape recommended",
+    "landscape": true,
+    "requirements": {
+      "wasm": false,
+      "webgl2": false
+    },
+    "bridge": true,
+    "save": "none",
+    "controls": {
+      "joystick": { "enabled": true, "radius": 65, "deadZone": 0.12 },
+      "buttons": [
+        { "label": "USE", "action": "KeyE" },
+        { "label": "LIGHT", "action": "KeyF" },
+        { "label": "FIRE", "action": "Space" },
+        { "label": "MAP", "action": "KeyM" }
+      ],
+      "keyboard": {
+        "KeyW": "KeyW", "KeyA": "KeyA", "KeyS": "KeyS", "KeyD": "KeyD",
+        "ArrowUp": "KeyW", "ArrowLeft": "KeyA", "ArrowDown": "KeyS", "ArrowRight": "KeyD",
+        "KeyE": "KeyE", "KeyF": "KeyF", "Space": "Space", "KeyR": "KeyR", "KeyM": "KeyM", "KeyO": "KeyO"
+      },
+      "gamepad": { "0": "KeyE", "1": "Space", "2": "KeyF", "9": "KeyM" },
+      "axes": { "left": "KeyA", "right": "KeyD", "up": "KeyW", "down": "KeyS" }
+    },
+    "notice": "Self-contained original micro-adventure. It has keyboard and touch controls plus local progress persistence; it deliberately does not claim a full production-scale 3D Android release."
+  },
+  {
     "id": "vc",
     "title": "Grand Theft Auto: Vice City",
     "series": "GTA",

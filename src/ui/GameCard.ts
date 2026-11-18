@@ -24,7 +24,7 @@ export function gameCard(
     "span",
     "card-badge",
     game.status === "available"
-      ? "LOCAL INPUT LAB"
+      ? "LOCAL RUNTIME"
       : game.status === "external"
         ? "EXTERNAL REFERENCE"
         : "NOT INSTALLED",
@@ -37,7 +37,7 @@ export function gameCard(
       ? "grand theft auto"
       : game.series === "Resident Evil"
         ? "resident evil"
-        : "input laboratory",
+        : game.title,
   );
   const sub = el(
     "em",
@@ -47,7 +47,8 @@ export function gameCard(
       .replace("Resident Evil", "")
       .replace(/^:\s*/, "") || "The original",
   );
-  if (game.series === "Tools") sub.textContent = "Test your setup";
+  if (game.id === "input-lab") sub.textContent = "Test your setup";
+  else if (game.series === "Tools") sub.textContent = "Original survival-horror";
   name.append(sub);
   art.append(name);
   const info = el("div", "card-info");
@@ -81,7 +82,7 @@ export function gameCard(
       "span",
       "availability",
       game.status === "available"
-        ? "Authorized local diagnostic runtime"
+        ? "Authorized local runtime"
         : game.status === "external"
           ? "Host-owned runtime · support unverified"
           : "Legal game files / authorized build required",

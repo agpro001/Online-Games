@@ -15,7 +15,7 @@ test("library search, detail, favorite and pending availability", async ({
   page,
 }) => {
   await page.goto("/#/library");
-  await expect(page.locator(".game-card")).toHaveCount(51);
+  await expect(page.locator(".game-card")).toHaveCount(52);
   await page.getByRole("searchbox").fill("vice");
   await expect(page.locator(".game-card")).toHaveCount(2);
   await page
@@ -48,6 +48,21 @@ test("library search, detail, favorite and pending availability", async ({
     "href",
     "https://www.lemon-web.net/html5games/grandtheftauto5/",
   );
+});
+test("THRESHOLD runtime reaches gameplay and accepts launcher input", async ({ page }) => {
+  await page.goto("/#/play/threshold");
+  await expect(page.locator("[data-state=PLAYING]")).toBeVisible();
+  const runtime = page.frameLocator(".game-frame");
+  await runtime.getByRole("button", { name: "BEGIN STORY" }).click();
+  await page.locator(".runtime-stage").focus();
+  await page.keyboard.press("Space");
+  await expect
+    .poll(() =>
+      page.locator("iframe").evaluate((f: HTMLIFrameElement) =>
+        JSON.parse(f.contentWindow?.localStorage.getItem("thresholdSignal") || "{}").a,
+      ),
+    )
+    .toBe(5);
 });
 test("local runtime bridge readiness, movement, pause and cleanup", async ({
   page,
